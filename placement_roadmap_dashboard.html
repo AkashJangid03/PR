@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Placement Roadmap | 15 December 2026</title>
+<style>
+:root{--bg:#f5f7fb;--panel:#fff;--ink:#172033;--muted:#667085;--line:#e5e9f0;--blue:#315efb;--blue2:#eaf0ff;--green:#16845b;--amber:#a76500;--red:#c13b3b;--shadow:0 5px 22px #18243b0b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+header{background:#111c35;color:white;padding:28px max(22px,calc((100% - 1200px)/2)) 24px}
+header .eyebrow{color:#aebfff;text-transform:uppercase;letter-spacing:.12em;font-size:11px;font-weight:700}
+h1{font-size:clamp(25px,4vw,36px);line-height:1.15;margin:8px 0}
+header p{color:#c7d0e3;margin:8px 0 0;max-width:760px}
+.wrap{max-width:1200px;margin:auto;padding:22px}
+.topline{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.pill{border:1px solid #ffffff30;border-radius:30px;padding:6px 11px;color:#e6ebf7;font-size:12px}
+nav{position:sticky;top:0;z-index:5;background:#ffffffed;backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:10px max(22px,calc((100% - 1200px)/2));display:flex;gap:8px;overflow:auto}
+nav button,.btn{border:1px solid var(--line);background:white;color:var(--ink);border-radius:9px;padding:8px 12px;cursor:pointer;font-weight:600;white-space:nowrap}
+nav button.active,.btn.primary{background:var(--blue);border-color:var(--blue);color:white}
+section{scroll-margin-top:70px;margin:22px 0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:12px}
+h2{font-size:20px;margin:0}h3{font-size:15px;margin:0 0 8px}.sub{color:var(--muted);font-size:12px}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--shadow)}
+.metric{font-size:27px;font-weight:750;letter-spacing:-.04em}.metric-label{color:var(--muted);font-size:12px}
+.progress{height:8px;background:#edf0f5;border-radius:20px;overflow:hidden;margin:10px 0 4px}.progress span{display:block;height:100%;width:0;background:var(--blue);border-radius:20px;transition:width .2s}
+.two{display:grid;grid-template-columns:1.25fr .75fr;gap:14px}
+.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.phase{border-left:3px solid var(--blue);padding:4px 0 4px 12px}.phase strong{display:block}.phase small{color:var(--muted)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.filters input,.filters select{padding:9px 10px;border:1px solid var(--line);border-radius:9px;background:white;color:var(--ink)}
+.subject{margin-bottom:12px}.subject-head{display:flex;align-items:center;justify-content:space-between;gap:10px}.subject-title{font-weight:700}.subject-meta{font-size:11px;color:var(--muted)}
+details{background:white;border:1px solid var(--line);border-radius:12px;margin:9px 0;overflow:hidden}
+summary{cursor:pointer;padding:13px 15px;list-style:none;display:flex;justify-content:space-between;gap:10px;align-items:center}
+summary::-webkit-details-marker{display:none}.summary-left{display:flex;gap:10px;align-items:center}.chev{color:var(--muted)}
+.topic-list{border-top:1px solid var(--line)}
+.topic{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:12px;align-items:center;padding:10px 15px;border-top:1px solid #f0f2f6}
+.topic:first-child{border-top:0}.topic-name{font-weight:600}.topic-note{font-size:11px;color:var(--muted)}
+.tags{display:flex;gap:5px;flex-wrap:wrap}.tag{font-size:10px;padding:3px 7px;border-radius:20px;background:#f0f2f6;color:#495267;white-space:nowrap}.p1{background:#fff0ed;color:#b23a2b}.p2{background:#fff5df;color:#946000}.p3{background:#edf1f7;color:#526078}
+select.status{border:1px solid var(--line);border-radius:7px;padding:6px;background:white;font-size:11px;min-width:116px}
+.project{display:flex;flex-direction:column;gap:7px}.project .row{display:flex;justify-content:space-between;gap:8px;align-items:center}
+.checkrow{display:flex;gap:9px;align-items:flex-start;padding:8px 0;border-top:1px solid #f0f2f6}.checkrow:first-of-type{border-top:0}.checkrow input{margin-top:4px;accent-color:var(--blue)}
+.notice{background:#fff8e9;border:1px solid #f4e1b8;border-radius:12px;padding:13px 15px;color:#684b13}
+footer{color:var(--muted);font-size:11px;text-align:center;padding:25px}
+button:focus,select:focus,input:focus{outline:2px solid #9db2ff;outline-offset:1px}
+@media(max-width:850px){.grid{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr}.timeline{grid-template-columns:1fr}.topic{grid-template-columns:1fr auto}.topic .tags{grid-column:1}.topic select{grid-column:2;grid-row:1/3}}
+@media(max-width:520px){.wrap{padding:14px}.grid{grid-template-columns:repeat(2,1fr)}.card{padding:12px}.metric{font-size:23px}.topic{gap:7px}.topic-name{font-size:13px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="eyebrow">Personal learning tracker · MSc Computer Applications</div>
+ <h1>Placement Roadmap</h1>
+ <p>Build interview-ready skills across analytics, data, AI and core IT. Track concepts, practical preparation and portfolio work through the 15 December 2026 milestone.</p>
+ <div class="topline"><span class="pill">Target: 15 Dec 2026</span><span class="pill">Travel: 19–30 Nov</span><span class="pill">Daily capacity: 4–5 hours</span><span class="pill">Pune-first job search</span></div>
+</header>
+<nav>
+ <button class="active" data-go="overview">Overview</button><button data-go="roadmap">Concept roadmap</button><button data-go="projects">Projects</button><button data-go="practicals">Practical exams</button><button data-go="plan">Schedule</button>
+</nav>
+<main class="wrap">
+<section id="overview">
+ <div class="section-head"><div><h2>Progress overview</h2><div class="sub">Your status is saved in this browser on this device.</div></div><button class="btn" id="export">Export progress</button></div>
+ <div class="grid">
+  <div class="card"><div class="metric" id="overall">0%</div><div class="metric-label">Overall concept completion</div><div class="progress"><span id="overallbar"></span></div></div>
+  <div class="card"><div class="metric" id="done">0 / 0</div><div class="metric-label">Concepts completed</div></div>
+  <div class="card"><div class="metric" id="active">0</div><div class="metric-label">Currently in progress</div></div>
+  <div class="card"><div class="metric" id="p1left">0</div><div class="metric-label">P1 concepts remaining</div></div>
+ </div>
+ <div class="two" style="margin-top:14px">
+  <div class="card"><h3>Subject progress</h3><div id="subjectProgress"></div></div>
+  <div class="card"><h3>Proficiency levels</h3>
+   <p><span class="tag" style="background:#e8efff;color:#294dc7">A · Interview-ready</span><br><span class="sub">Independently answer questions and solve common problems.</span></p>
+   <p><span class="tag" style="background:#e8f6ef;color:#14734f">B · Working knowledge</span><br><span class="sub">Explain architecture, implement basics and solve simple scenarios.</span></p>
+   <p><span class="tag">C · Conceptual</span><br><span class="sub">Explain purpose, architecture and use cases.</span></p>
+   <hr style="border:0;border-top:1px solid var(--line)">
+   <p><span class="tag p1">P1</span> Critical · <span class="tag p2">P2</span> Important · <span class="tag p3">P3</span> Later / overview</p>
+  </div>
+ </div>
+</section>
+<section id="roadmap">
+ <div class="section-head"><div><h2>Concept-by-concept roadmap</h2><div class="sub">Update each topic as Not Started, In Progress or Completed.</div></div></div>
+ <div class="filters">
+  <input id="search" placeholder="Search a concept or subject…">
+  <select id="levelFilter"><option value="">All levels</option><option>A</option><option>B</option><option>C</option></select>
+  <select id="priorityFilter"><option value="">All priorities</option><option>P1</option><option>P2</option><option>P3</option></select>
+  <select id="statusFilter"><option value="">All statuses</option><option>Not Started</option><option>In Progress</option><option>Completed</option></select>
+  <button class="btn" id="clearFilters">Clear filters</button>
+ </div>
+ <div id="roadmapList"></div>
+</section>
+<section id="projects">
+ <div class="section-head"><div><h2>Portfolio projects</h2><div class="sub">Projects are practice vehicles; they should reinforce core topics, not become extra workload.</div></div></div>
+ <div class="grid" id="projectGrid"></div>
+</section>
+<section id="practicals">
+ <div class="section-head"><div><h2>December practical preparation</h2><div class="sub">All assigned practicals need implementation, code explanation and viva practice.</div></div></div>
+ <div class="two">
+  <div class="card"><h3>Python practicals</h3><div id="pythonChecks"></div></div>
+  <div class="card"><h3>MEAN Stack practicals</h3><div id="meanChecks"></div></div>
+ </div>
+ <p class="notice" style="margin-top:12px"><strong>Exam dates not entered:</strong> add your confirmed Python and MEAN practical dates to your calendar. Semester Project and Research Project exam preparation are separate and are intentionally not included here.</p>
+</section>
+<section id="plan">
+ <div class="section-head"><div><h2>Timeline and study routine</h2><div class="sub">The travel period is intentionally treated as unavailable for compulsory study.</div></div></div>
+ <div class="card">
+  <div class="timeline">
+   <div class="phase"><strong>6–18 November</strong><small>Foundation sprint</small><p>Core SQL, Excel, Power BI, Python/Pandas. Start practical programs and E-commerce project.</p></div>
+   <div class="phase" style="border-color:#a76500"><strong>19–30 November</strong><small>Travel break</small><p>No required study. Optional light revision only if convenient.</p></div>
+   <div class="phase" style="border-color:#16845b"><strong>1–15 December</strong><small>Readiness sprint</small><p>Finish core topics, interview practice, project deliverables and practical revision.</p></div>
+  </div>
+ </div>
+ <div class="two" style="margin-top:12px">
+  <div class="card"><h3>Normal study day · 4.5 hours</h3>
+   <div class="checkrow"><span>60 min</span><span>SQL practice</span></div>
+   <div class="checkrow"><span>60 min</span><span>Excel / Power BI (alternate)</span></div>
+   <div class="checkrow"><span>60 min</span><span>Python / Pandas</span></div>
+   <div class="checkrow"><span>60 min</span><span>Practical exam or rotating technical subject</span></div>
+   <div class="checkrow"><span>30 min</span><span>Interview questions and revision</span></div>
+  </div>
+  <div class="card"><h3>Rules for using this roadmap</h3>
+   <ul style="padding-left:18px;margin-bottom:0">
+    <li>Complete P1 topics before spending time on P3.</li>
+    <li>Mark a topic complete only when you can explain it and solve a basic task without copying.</li>
+    <li>Use project work to practise SQL/Python/Power BI; do not add it as a sixth daily session.</li>
+    <li>Practical exam dates may change the weekly allocation.</li>
+    <li>Do not aim to master every technology by 15 December.</li>
+   </ul>
+  </div>
+ </div>
+</section>
+</main>
+<footer>Roadmap based on the agreed 15 December 2026 target. Progress is stored locally in this browser; export a backup regularly.</footer>
+<script>
+const subjects = [
+{ name:"SQL",level:"A",priority:"P1",topics:[
+["SELECT, WHERE, DISTINCT","Retrieve and filter rows"],["ORDER BY, LIMIT","Sort and restrict results"],["COUNT, SUM, AVG, MIN, MAX","Aggregate values"],["GROUP BY and HAVING","Group and filter aggregate results"],["INNER and LEFT JOIN","Combine related tables"],["RIGHT, FULL and SELF JOIN","Handle alternate join patterns"],["CASE WHEN","Conditional query logic"],["NULL handling","IS NULL, COALESCE and NULL behaviour"],["Subqueries and correlated subqueries","Nested query logic"],["UNION and UNION ALL","Combine result sets"],["CTEs","Readable multi-step queries"],["Window functions","Analyse across related rows"],["ROW_NUMBER, RANK, DENSE_RANK","Ranking and deduplication"],["LAG and LEAD","Compare previous/next rows"],["Keys, constraints and normalization","Relational design fundamentals"],["Indexes and execution plans","Understand query performance"],["Interview case problems","Duplicates, second-highest salary, revenue, retention"]]},
+{ name:"Excel",level:"A",priority:"P1",topics:[
+["Formatting, tables, sorting and filtering","Prepare structured spreadsheets"],["IF and IFS","Conditional logic"],["SUMIF and SUMIFS","Conditional totals"],["COUNTIF and COUNTIFS","Conditional counts"],["VLOOKUP and XLOOKUP","Lookup values"],["INDEX and MATCH","Flexible lookup pattern"],["LEFT, RIGHT, MID and TRIM","Text cleaning"],["Date and text functions","Prepare date/text fields"],["Remove duplicates and handle missing values","Data cleaning"],["Pivot Tables and Pivot Charts","Summarize business data"],["Slicers and conditional formatting","Interactive reporting"],["Power Query","Repeatable data transformation"],["Dynamic management report","Build a report from raw sales data"]]},
+{ name:"Power BI",level:"A",priority:"P1",topics:[
+["Power BI Desktop interface","Navigate the authoring environment"],["Import Excel, CSV and SQL data","Connect to data sources"],["Power Query Editor","Transform data"],["Cleaning and transformation","Types, nulls, duplicates, columns"],["Table relationships","Build correct model relationships"],["Star schema","Separate facts and dimensions"],["Calculated columns vs measures","Choose calculation type"],["DAX basics","Write measures and expressions"],["CALCULATE and FILTER","Control filter context"],["SUMX, COUNTROWS and DIVIDE","Common DAX functions"],["Time intelligence","Period comparisons and trends"],["KPIs, cards, charts and slicers","Build report visuals"],["Drill-through and interactions","Enable report exploration"],["Dashboard storytelling","Communicate insights and decisions"]]},
+{ name:"Python",level:"A",priority:"P1",topics:[
+["Functions, loops and conditions","Write reusable program logic"],["Lists, tuples, sets and dictionaries","Use core collections"],["List/dict comprehensions and lambda","Write concise transformations"],["Exception handling","Handle runtime errors"],["OOP: classes and objects","Structure code"],["Inheritance and encapsulation","Apply OOP relationships"],["File handling and CSV/Excel","Read and write data files"],["NumPy arrays and indexing","Work with numerical arrays"],["Filtering, broadcasting and aggregation","Transform array data"],["Pandas DataFrames and read_csv","Load tabular data"],["Filtering, groupby and aggregation","Summarize datasets"],["Merge, join and pivot","Combine and reshape data"],["Missing values, duplicates and dtypes","Clean datasets"],["Date operations and descriptive statistics","Analyse time and distributions"],["Matplotlib and Seaborn","Visualize data"],["Practical data analysis","Complete an end-to-end CSV/Excel analysis"]]},
+{ name:"Statistics",level:"B",priority:"P2",topics:[
+["Mean, median and mode","Measures of central tendency"],["Variance and standard deviation","Measure spread"],["Percentiles and quartiles","Understand distribution position"],["Probability fundamentals","Reason about uncertainty"],["Normal distribution","Understand common distribution"],["Correlation vs causation","Avoid misleading conclusions"],["Sampling and bias","Understand data collection risks"],["Hypothesis testing","Test a claim using data"],["P-value and confidence intervals","Interpret statistical evidence"],["A/B testing fundamentals","Compare variants"],["Outliers and data distributions","Inspect unusual observations"]]},
+{ name:"Data Science & ML",level:"B",priority:"P2",topics:[
+["Supervised vs unsupervised learning","Understand learning settings"],["Regression vs classification","Choose problem type"],["Linear regression","Baseline numeric prediction"],["Logistic regression","Baseline classification"],["Decision trees and random forests","Tree-based models"],["K-means clustering","Group similar observations"],["Train-test split and cross-validation","Evaluate on unseen data"],["Overfitting and underfitting","Diagnose generalization"],["Accuracy, precision and recall","Evaluate classification"],["F1 and ROC-AUC","Compare classifier performance"]]},
+{ name:"Data Engineering",level:"B",priority:"P2",topics:[
+["Data Engineer vs Data Analyst","Understand role boundaries"],["ETL vs ELT","Understand transformation patterns"],["Batch vs streaming","Understand processing modes"],["Data pipeline architecture","Trace source-to-consumer flow"],["Warehouse vs data lake","Choose storage patterns"],["OLTP vs OLAP","Understand operational/analytical systems"],["Fact and dimension tables","Model analytical data"],["Data quality and validation","Check completeness and correctness"],["Spark fundamentals","Understand distributed processing"],["Airflow and DAGs","Understand workflow orchestration"],["Kafka fundamentals","Understand event streaming"],["Retries, monitoring and pipeline failures","Design basic reliability"]]},
+{ name:"AI Engineering",level:"B",priority:"P2",topics:[
+["LLM fundamentals","Understand language model capabilities"],["Tokens and context windows","Understand input/output limits"],["Temperature, top-p and max tokens","Understand generation controls"],["Transformer and attention","Explain core architecture"],["Embeddings","Convert text to vectors"],["Vector databases and similarity search","Retrieve semantically similar content"],["RAG: chunking and indexing","Prepare documents for retrieval"],["RAG: retrieval and generation","Ground model answers in sources"],["LangChain models, prompts and retrievers","Understand application components"],["LangGraph state, nodes and edges","Understand workflow graphs"],["Agents and tool use","Understand action loops"],["MCP client-server architecture","Understand tool integration"],["API requests, authentication and errors","Connect services safely"],["Evaluation and hallucination testing","Assess retrieval and answer quality"]]},
+{ name:"DBMS, RDBMS & NoSQL",level:"B",priority:"P2",topics:[
+["DBMS vs RDBMS","Compare database systems"],["ACID properties and transactions","Understand reliable transactions"],["Normalization","Reduce redundancy"],["Primary/foreign keys and constraints","Enforce data integrity"],["Indexes","Understand lookup acceleration"],["NoSQL data models","Document, key-value, column and graph"],["SQL vs NoSQL use cases","Choose a storage approach"]]},
+{ name:"Programming & OOP",level:"B",priority:"P2",topics:[
+["Variables, types and control flow","Refresh programming fundamentals"],["Functions and modularity","Organize reusable logic"],["Classes, objects and constructors","Model program entities"],["Encapsulation, inheritance and polymorphism","Explain core OOP concepts"],["Debugging and exception handling","Find and handle failures"],["Basic DSA: arrays, strings, stacks and queues","Solve common fundamentals"]]},
+{ name:"System Design & Architecture",level:"C",priority:"P3",topics:[
+["Client-server architecture","Explain request/response flow"],["Monolith vs microservices","Compare deployment styles"],["API gateway","Understand service entry point"],["Caching","Understand faster repeated reads"],["Message queues","Understand asynchronous work"],["Load balancing and scaling","Understand traffic distribution"]]},
+{ name:"Software Testing",level:"C",priority:"P3",topics:[
+["Unit and integration testing","Understand test scope"],["System and regression testing","Understand end-to-end confidence"],["API testing fundamentals","Test request/response behaviour"],["Test cases and test documentation","Write reproducible checks"]]},
+{ name:"Cloud",level:"B",priority:"P2",topics:[
+["Cloud service models","IaaS, PaaS and SaaS"],["Compute","Virtual machines and app hosting"],["Storage","Object and file storage concepts"],["Networking","VPC/VNet and connectivity basics"],["IAM","Identity, roles and permissions"],["Azure/AWS fundamentals","Explain common cloud building blocks"]]},
+{ name:"Docker",level:"B",priority:"P2",topics:[
+["Images and containers","Explain the difference"],["Build and run a container","Basic hands-on workflow"],["Volumes and networks","Persist data and connect services"],["Docker Compose","Run a multi-service application"]]},
+{ name:"Kubernetes",level:"C",priority:"P3",topics:[
+["Pods","Smallest deployable unit"],["Deployments","Manage replicated workloads"],["Services","Expose workloads"],["Scaling","Understand replica scaling"]]},
+{ name:"Deep Learning & NLP",level:"C",priority:"P3",topics:[
+["Neural network fundamentals","Layers, weights and activation"],["Training and loss","Understand optimization basics"],["NLP fundamentals","Tokenization and text processing"],["Sentiment analysis use case","Understand a simple NLP workflow"]]}
+];
+const projects=[
+{name:"E-commerce Business Analytics",priority:"P1",stack:"SQL · Excel · Python · Power BI",goal:"Explain why revenue may rise while profitability falls.",steps:["Choose realistic sales dataset and inspect schema","Clean and validate data","Load data into SQL and write analysis queries","Perform EDA in Python/Pandas","Build Power BI model and dashboard","Write business findings and recommendations","Publish SQL, notebook, dashboard screenshots and README"]},
+{name:"Customer Churn & Retention",priority:"P2",stack:"SQL · Python · Statistics · ML · Power BI",goal:"Find churn patterns and identify at-risk customers.",steps:["Inspect customer and subscription dataset","Analyse churn and retention segments","Explore monthly/yearly retention patterns","Train a basic churn model","Evaluate model and explain limitations","Build retention dashboard and recommendations","Document findings and publish repository"]},
+{name:"Automated Data Pipeline",priority:"P3",stack:"Python · REST API · SQL · ETL · Docker",goal:"Automate source-to-database reporting flow.",steps:["Read data from API/CSV/Excel","Transform and validate records","Load records into SQL database","Handle duplicates and repeat runs safely","Handle API/database errors and retries","Add logs and basic monitoring","Containerize with Docker; understand Airflow DAG"]},
+{name:"Later: AI / NLP portfolio",priority:"P3",stack:"NLP · RAG · LangGraph · MCP",goal:"Build after the December placement milestone.",steps:["Customer review sentiment analysis","Document-based RAG assistant","LangGraph workflow with tools","MCP integration demo"]}
+];
+const practicals={
+python:["Basic number problems, loops, patterns and series","Prime, Armstrong, Strong numbers and Pythagorean triplets","NumPy case studies: climate, image, genomic and financial data","Control-structure case studies: sales, grades, library and attendance","OOP: School Management system","OOP: Vehicle Rental system","Explain each program line-by-line and practise viva"],
+mean:["AngularJS: student details, expressions and data binding","AngularJS: shopping cart","AngularJS: REST API using $http","AngularJS: registration form validation","MongoDB: find, update and delete operations","MongoDB: ShopDB Products CRUD, sorting and top 3","MongoDB: Sales aggregation","Node.js: console and file operations","Node.js: HTTP server","Express: welcome route and parameterized route","Express: product table and multiple routes","Explain each program and practise viva"]
+};
+const storeKey="placementRoadmap2026_v1";
+let state={};try{state=JSON.parse(localStorage.getItem(storeKey)||"{}")}catch(e){state={}}
+function key(s,i){return s+"::"+i}
+function get(k){return state[k]||"Not Started"}
+function set(k,v){state[k]=v;localStorage.setItem(storeKey,JSON.stringify(state));render()}
+function pct(vals){return vals.length?Math.round(vals.filter(v=>v==="Completed").length/vals.length*100):0}
+function allTopics(){return subjects.flatMap(s=>s.topics.map((t,i)=>({subject:s.name,index:i,name:t[0],note:t[1],level:s.level,priority:s.priority,status:get(key(s.name,i))})))}
+function tag(txt,cls=""){return `<span class="tag ${cls}">${txt}</span>`}
+function renderOverview(){
+ const ts=allTopics(),completed=ts.filter(t=>t.status==="Completed").length,active=ts.filter(t=>t.status==="In Progress").length,p1=ts.filter(t=>t.priority==="P1"&&t.status!=="Completed").length;
+ const percent=pct(ts.map(t=>t.status));document.getElementById("overall").textContent=percent+"%";document.getElementById("overallbar").style.width=percent+"%";
+ document.getElementById("done").textContent=completed+" / "+ts.length;document.getElementById("active").textContent=active;document.getElementById("p1left").textContent=p1;
+ document.getElementById("subjectProgress").innerHTML=subjects.map(s=>{let vals=s.topics.map((_,i)=>get(key(s.name,i))),p=pct(vals);return `<div class="subject"><div class="subject-head"><span class="subject-title">${s.name}</span><span class="subject-meta">${p}% · Level ${s.level}</span></div><div class="progress"><span style="width:${p}%"></span></div></div>`}).join("");
+}
+function renderRoadmap(){
+ const q=document.getElementById("search").value.toLowerCase(),lf=document.getElementById("levelFilter").value,pf=document.getElementById("priorityFilter").value,sf=document.getElementById("statusFilter").value;
+ document.getElementById("roadmapList").innerHTML=subjects.map(s=>{
+ let items=s.topics.map((t,i)=>({t,i,status:get(key(s.name,i))})).filter(x=>(!q||(s.name+" "+x.t.join(" ")).toLowerCase().includes(q))&&(!lf||s.level===lf)&&(!pf||s.priority===pf)&&(!sf||x.status===sf));
+ if(!items.length)return "";
+ let done=s.topics.filter((_,i)=>get(key(s.name,i))==="Completed").length,p=pct(s.topics.map((_,i)=>get(key(s.name,i))));
+ return `<details class="subject" open><summary><span class="summary-left"><strong>${s.name}</strong><span class="tags">${tag("Level "+s.level)}${tag(s.priority,s.priority.toLowerCase())}</span></span><span class="subject-meta">${done}/${s.topics.length} · ${p}% <span class="chev">⌄</span></span></summary><div class="topic-list">${items.map(x=>`<div class="topic"><div><div class="topic-name">${x.t[0]}</div><div class="topic-note">${x.t[1]}</div></div><div class="tags">${tag("L"+s.level)}${tag(s.priority,s.priority.toLowerCase())}</div><select class="status" aria-label="Status for ${x.t[0]}" data-key="${key(s.name,x.i)}"><option ${x.status==="Not Started"?"selected":""}>Not Started</option><option ${x.status==="In Progress"?"selected":""}>In Progress</option><option ${x.status==="Completed"?"selected":""}>Completed</option></select></div>`).join("")}</div></details>`
+ }).join("")||'<div class="card">No topics match these filters.</div>';
+ document.querySelectorAll("select.status").forEach(el=>el.addEventListener("change",e=>set(e.target.dataset.key,e.target.value)));
+}
+function renderProjects(){
+ document.getElementById("projectGrid").innerHTML=projects.map((p,idx)=>{
+ let vals=p.steps.map((_,i)=>get("project::"+idx+"::"+i)),progress=pct(vals);
+ return `<div class="card project"><div class="row"><strong>${p.name}</strong>${tag(p.priority,p.priority.toLowerCase())}</div><div class="sub">${p.stack}</div><div>${p.goal}</div><div class="progress"><span style="width:${progress}%"></span></div><div class="sub">${progress}% complete</div>${p.steps.map((st,i)=>`<label class="checkrow"><input type="checkbox" data-project="${idx}" data-step="${i}" ${vals[i]==="Completed"?"checked":""}><span>${st}</span></label>`).join("")}</div>`
+ }).join("");
+ document.querySelectorAll("[data-project]").forEach(el=>el.addEventListener("change",e=>{let k="project::"+e.target.dataset.project+"::"+e.target.dataset.step;set(k,e.target.checked?"Completed":"Not Started")}));
+}
+function renderChecks(id,items,prefix){
+ document.getElementById(id).innerHTML=items.map((item,i)=>`<label class="checkrow"><input type="checkbox" data-check="${prefix}::${i}" ${get(prefix+"::"+i)==="Completed"?"checked":""}><span>${item}</span></label>`).join("");
+ document.querySelectorAll("[data-check]").forEach(el=>el.addEventListener("change",e=>set(e.target.dataset.check,e.target.checked?"Completed":"Not Started")));
+}
+function render(){renderOverview();renderRoadmap();renderProjects();renderChecks("pythonChecks",practicals.python,"pythonPractical");renderChecks("meanChecks",practicals.mean,"meanPractical")}
+["search","levelFilter","priorityFilter","statusFilter"].forEach(id=>document.getElementById(id).addEventListener("input",renderRoadmap));
+document.getElementById("clearFilters").addEventListener("click",()=>{["search","levelFilter","priorityFilter","statusFilter"].forEach(id=>document.getElementById(id).value="");renderRoadmap()});
+document.querySelectorAll("nav button").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll("nav button").forEach(x=>x.classList.remove("active"));b.classList.add("active");document.getElementById(b.dataset.go).scrollIntoView({behavior:"smooth"})}));
+document.getElementById("export").addEventListener("click",()=>{let blob=new Blob([JSON.stringify({exportedAt:new Date().toISOString(),progress:state},null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="placement-roadmap-progress.json";a.click();URL.revokeObjectURL(a.href)});
+render();
+</script>
+</body>
+</html>
